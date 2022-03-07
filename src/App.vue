@@ -47,6 +47,8 @@ export default {
            body: this.body,
         }
         this.posts.push(newPost);
+        this.title = '';
+        this.body = '';
     },
     
 

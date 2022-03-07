@@ -1,11 +1,6 @@
 <template>
     <div>
-        <button @click="addLike">Like</button>
-        <button @click="addDislike">Dislike</button>
-        <div>
-            Количество лайков: <strong>{{ likes }}</strong> 
-            Количество дизлайков: <strong>{{ dislikes }}</strong> 
-        </div>
+        
     </div>
 </template>
 

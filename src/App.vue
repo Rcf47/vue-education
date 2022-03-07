@@ -4,13 +4,14 @@
       <h4>Создание поста</h4>
       <input
         v-bind:value="title"
-        @input="inputTitle"
+        @input="title = $event.target.value"
         class="input"
         type="text"
         placeholder="Название"
       />
       <input
         v-bind:value="body"
+        @input="body = $event.target.value"
         class="input"
         type="text"
         placeholder="Описание"
@@ -42,9 +43,7 @@ export default {
     createPost() {
 
     },
-    inputTitle(event) {
-        this.title = event.target.value;
-    }
+    
 
   }
   
